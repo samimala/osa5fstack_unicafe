@@ -26,6 +26,7 @@ const counterReducer = (state = initialState, action) => {
         ...state,
         bad: state.bad + 1
       }
+      console.log('Reduce returns', newBState)
       return newBState
     case 'ZERO':
       const newState = {
